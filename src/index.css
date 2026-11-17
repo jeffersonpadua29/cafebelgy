@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    background-color: #FCFAF6;
+    color: #3B2923;
+  }
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F0E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C2AA8A;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8B6F5E;
+}
+
+/* Cute subtle paw-print watermarked background pattern */
+.bg-paw-pattern {
+  background-color: #FAF5EE;
+  background-image: radial-gradient(#D8C3A5 0.8px, transparent 0.8px), radial-gradient(#D8C3A5 0.8px, #FAF5EE 0.8px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+/* Floating animation for playful puppy elements */
+@keyframes dogWag {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(6deg); }
+  75% { transform: rotate(-6deg); }
+}
+
+.animate-wag {
+  animation: dogWag 2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* Editorial quote marks styling */
+.quote-mark {
+  font-family: "Fraunces", serif;
+}
