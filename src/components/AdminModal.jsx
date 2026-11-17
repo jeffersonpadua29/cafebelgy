@@ -7,7 +7,7 @@ import { PawPrintIcon, InstagramIcon } from './SocialIcons';
 // 🔑 STAFF ADMIN PIN CONFIGURATION
 // Loaded securely from .env (VITE_ADMIN_PIN)
 // ==========================================
-export const ADMIN_PIN = import.meta.env.VITE_ADMIN_PIN || "belgy";
+export const ADMIN_PIN = import.meta.env.VITE_ADMIN_PIN || "steamedcoffee_11";
 
 export default function AdminModal() {
   const {
